@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Las Chicas Cakes | Home </title>
 </head>
@@ -48,8 +49,44 @@
     -La seccion contacto, cuenta con un formulario para hacer consultas, el mapa de ubicacion del local, direccion del mismo
     horarios de atencion, telefono -->
     <section class="inicio" id="Inicio">
-        <div class="carousel"><!-- Aca va un carousel  -->
-            <img src="" alt="carousel de imagenes">
+        <!-- Aca va un carousel  -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/images/img18.png" class="d-block w-100" alt="torta de cumpleaños">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Selva negra</h5>
+                  <p>Exquisita torta con un toque clasico de chocolate como nunca puede faltar</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/img14.png" class="d-block w-100" alt="lemon pie">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Lemon Pie</h5>
+                  <p>Con los toques justos de limon para disfrutar cada vocado</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/img4.png" class="d-block w-100" alt="nosotras">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Nos encanta verte de nuevo</h5>
+                  <p>Te invitamos a ver todo lo que tenemos para ofrecerte y a que entres a ver nuestras ofertas exclusivas</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
         <!--  -->
         <div class="fotos-inicio foto1"><!--<img src="assets/images/img3.png" alt="torta" class="ancho">--></div>
