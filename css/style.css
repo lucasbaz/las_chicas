@@ -1,3 +1,19 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
 
+/* estilo de la pagina (color de fondo) */
+.pagina {
+  /* position: absolute; */
+  /* top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 4739px; */
+  background: transparent linear-gradient(180deg, #B9D5D3 0%, #AFC7C5 28%, #A7BBB9 42%, #9FAEAD 59%, #929B9B 89%, #808080 100%) 0% 0% padding-box;
+  opacity: 1;
+}
+
+/* FIN estilo de la pagina (color de fondo) */
 
 /*# sourceMappingURL=style.css.map */
