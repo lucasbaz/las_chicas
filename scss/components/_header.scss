@@ -1,0 +1,64 @@
+@import "../base/mapas";
+@import "../base/extend";
+@import "../base/mixin";
+
+.text-0, .text-1, .text-2, .text-3, .text-4 {
+    text-align: map-get($map: $textsections, $key: alineacion);
+    font: map-get($map: $textsections, $key: fontstyle );
+    letter-spacing: map-get($map: $textsections, $key: letterspacing );
+    color: map-get($map: $textsections, $key: color);
+    text-transform: map-get($map: $textsections, $key: text-transform );
+    opacity: map-get($map: $textsections, $key: opacity );
+}
+
+.button-nav0 {
+    @include button-display (flex, 40px, 708px, 166px, 50px);
+    @extend %button-nav;
+        :hover {
+            @extend %button-hv;
+        }
+        :active {
+            @extend %button-active;
+        }
+}
+.button-nav1 {
+    @include button-display (flex, 40px, 895px, 166px, 50px);
+    @extend %button-nav;
+        :hover {
+            @extend %button-hv;
+        }
+        :active {
+            @extend %button-active;
+        }
+}
+.button-nav2 {
+    @include button-display (flex, 40px, 1082px, 166px, 50px);
+    @extend %button-nav;
+        :hover {
+            @extend %button-hv;
+        }
+        :active {
+            @extend %button-active;
+        }
+}
+.button-nav3 {
+    @include button-display (flex, 40px, 1269px, 166px, 50px);
+    @extend %button-nav;
+        :hover {
+            @extend %button-hv;
+        }
+        :active {
+            @extend %button-active;
+        }
+}
+.button-nav4 {
+    @include button-display (flex, 40px, 1456px, 166px, 50px);
+    @extend %button-nav;
+        :hover {
+            @extend %button-hv;
+        }
+        :active {
+            @extend %button-active;
+        }
+}
+

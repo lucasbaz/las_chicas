@@ -1,0 +1,15 @@
+%button-nav {
+    background: rgba(255, 0, 0, 0) 0% 0% no-repeat padding-box;
+    box-shadow: inset 2px 3px 6px #0000001F, inset -2px -2px 3px #457470c9;
+    border-radius: 10px;
+    opacity: 1;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+}
+%button-hv {
+    backdrop-filter: sepia(20%);
+    text-shadow: 1px 1px 20px #000;
+}
+%button-active {
+    box-shadow: inset -2px -2px 3px #0000001F, inset 2px 3px 6px #457470c9;
+}

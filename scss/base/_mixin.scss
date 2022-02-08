@@ -1,0 +1,7 @@
+@mixin button-display ($display, $valor1, $valor2, $valor3, $valor4) {
+    display: $display;
+    top: $valor1;
+    left: $valor2;
+    width: $valor3;
+    height: $valor4;
+}
