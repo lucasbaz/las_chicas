@@ -1,7 +1,23 @@
-@mixin button-display ($display, $valor1, $valor2, $valor3, $valor4) {
+@mixin display_position ($display, $valor1, $valor2, $valor3, $valor4) {
     display: $display;
     top: $valor1;
     left: $valor2;
     width: $valor3;
     height: $valor4;
+}
+
+@mixin positions ($valor1, $valor2, $valor3, $valor4) {
+    top: $valor1;
+    left: $valor2;
+    width: $valor3;
+    height: $valor4;
+}
+
+@mixin text_desing ($alineacion, $fuente) {
+    text-decoration: none;
+    text-align: $alineacion;
+    font: $fuente;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }

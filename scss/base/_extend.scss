@@ -13,3 +13,15 @@
 %button-active {
     box-shadow: inset -2px -2px 3px #0000001F, inset 2px 3px 6px #457470c9;
 }
+
+%spaceline_style {
+    position: relative;
+    top: 0px;
+    left: 33px;
+    width: 1856px;
+    height: 1px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 5px solid #869695;
+    opacity: 1;
+}

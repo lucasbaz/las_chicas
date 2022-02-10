@@ -33,12 +33,15 @@
   box-shadow: inset -2px -2px 3px #0000001F, inset 2px 3px 6px #457470c9;
 }
 
-.text-0, .text-1, .text-2, .text-3, .text-4 {
-  text-align: center;
-  font: normal normal normal 25px/31px Calibri;
-  letter-spacing: 0px;
-  color: #FFFFFF;
-  text-transform: uppercase;
+.space-line {
+  position: relative;
+  top: 0px;
+  left: 33px;
+  width: 1856px;
+  height: 1px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 5px solid #869695;
   opacity: 1;
 }
 
@@ -76,6 +79,118 @@
   left: 1456px;
   width: 166px;
   height: 50px;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 130px;
+  z-index: 5;
+}
+.menu .nav {
+  position: relative;
+  min-width: 100%;
+  min-height: auto;
+  background: #79c4bfc9 0% 0% padding-box;
+  border: 1px solid #B9D5D3;
+  border-radius: 17px;
+  opacity: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.menu .nav .list-property {
+  display: grid;
+  min-width: 100%;
+  min-height: auto;
+  grid-template-columns: 0.5fr 0.75fr 2fr 0.3fr;
+  grid-template-rows: 120px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.menu .nav .position-logo {
+  grid-area: 1/1/2/2;
+}
+.menu .nav .position-name {
+  grid-area: 1/2/2/3;
+}
+.menu .nav .position-class {
+  grid-area: 1/3/2/4;
+}
+.menu .nav .position-social {
+  grid-area: 1/4/2/5;
+}
+.menu .nav .logo {
+  display: flex;
+  /* antes estaba con inline */
+  text-decoration: none;
+  list-style: none;
+}
+.menu .nav .logo .logomain {
+  top: 6px;
+  left: 47px;
+  width: 118px;
+  height: 118px;
+  background: transparent url("assets/images/logolaschicas.png") 0% 0% no-repeat padding-box;
+  border-radius: 27px;
+  opacity: 1;
+}
+.menu .nav .logo .txt {
+  display: flex;
+  top: 19px;
+  left: 173px;
+  width: 310px;
+  height: 68px;
+  text-decoration: none;
+  text-align: center;
+  font: normal normal normal 55px/68px Ink Free;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-decoration: none;
+}
+.menu .nav .logo .txtbis {
+  display: flex;
+  top: 75px;
+  left: 248px;
+  width: 161px;
+  height: 24px;
+  text-decoration: none;
+  text-align: left;
+  font: normal normal normal 20px/24px Calibri;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.menu .nav .logo .text-0, .menu .nav .logo .text-1, .menu .nav .logo .text-2, .menu .nav .logo .text-3, .menu .nav .logo .text-4 {
+  text-align: center;
+  font: normal normal normal 25px/31px Calibri;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.menu .nav .logo .bi {
+  width: 40px;
+  height: 40px;
+  color: #FF5C5D;
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.menu .nav .logo .bi-instagram {
+  top: 45px;
+  left: 1685px;
+}
+.menu .nav .logo .bi-facebook {
+  top: 45px;
+  left: 1735px;
+}
+.menu .nav .logo .bi-whatsapp {
+  top: 45px;
+  left: 1785px;
+}
+
+ul {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
