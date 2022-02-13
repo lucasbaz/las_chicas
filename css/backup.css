@@ -415,27 +415,27 @@
 }
 .prod1 {
     grid-area: prod1;
-    background-image: url('assets/images/img10.png');
+    background-image: url('../assets/images/img10.png');
 }
 .prod2 {
     grid-area: prod2;
-    background-image: url('assets/images/img12.png');
+    background-image: url('../assets/images/img12.png');
 }
 .prod3 {
     grid-area: prod3;
-    background-image: url("assets/images/img14.png");
+    background-image: url("../assets/images/img14.png");
 }
 .prod4 {
     grid-area: prod4;
-    background-image: url("assets/images/img11.png");
+    background-image: url("../assets/images/img11.png");
 }
 .prod5 {
     grid-area: prod5;
-    background-image: url("assets/images/img7.png");
+    background-image: url("../assets/images/img7.png");
 }
 .prod6 {
     grid-area: prod6;
-    background-image: url("assets/images/img16.png");
+    background-image: url("../assets/images/img16.png");
 }
 /* .fotos-productos { */
     /* position: relative; */
