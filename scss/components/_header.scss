@@ -7,13 +7,12 @@ a:link, a:visited, a:active  {
     text-decoration: none
 }
 
-
 .space-line {
     @extend %spaceline_style;
 }
 
 .button-nav0 {
-    @include display_position (flex, 40px, 708px, 166px, 50px);
+    @include display_position (null, 40px, 166px, 50px);
     @extend %button-nav;
         :hover {
             @extend %button-hv;
@@ -23,7 +22,7 @@ a:link, a:visited, a:active  {
         }
 }
 .button-nav1 {
-    @include display_position (flex, 40px, 895px, 166px, 50px);
+    @include display_position (flex, 40px, 166px, 50px);
     @extend %button-nav;
         :hover {
             @extend %button-hv;
@@ -33,7 +32,7 @@ a:link, a:visited, a:active  {
         }
 }
 .button-nav2 {
-    @include display_position (flex, 40px, 1082px, 166px, 50px);
+    @include display_position (flex, 40px, 166px, 50px);
     @extend %button-nav;
         :hover {
             @extend %button-hv;
@@ -43,7 +42,7 @@ a:link, a:visited, a:active  {
         }
 }
 .button-nav3 {
-    @include display_position (flex, 40px, 1269px, 166px, 50px);
+    @include display_position (flex, 40px, 166px, 50px);
     @extend %button-nav;
         :hover {
             @extend %button-hv;
@@ -53,7 +52,7 @@ a:link, a:visited, a:active  {
         }
 }
 .button-nav4 {
-    @include display_position (flex, 40px, 1456px, 166px, 50px);
+    @include display_position (flex, 40px, 166px, 50px);
     @extend %button-nav;
         :hover {
             @extend %button-hv;
@@ -91,21 +90,25 @@ a:link, a:visited, a:active  {
         }
         .position-logo {
             grid-area: 1 / 1 / 2 / 2;
+            display: flex;
+            justify-content: space-around;
         }
         .position-name {
             grid-area: 1 / 2 / 2 / 3;
         }
         .position-class {
             grid-area: 1 / 3 / 2 / 4;
+            display: flex;
+            justify-content: space-around;
         }
         .position-social {
             grid-area: 1 / 4 / 2 / 5;
         }
 
         .logo {
-            display: flex; 
-            /* antes estaba con inline */
-            text-decoration: none;
+            // display: flex; 
+            // /* antes estaba con inline */
+            // text-decoration: none;
             list-style: none;
             .logomain {
                 @include positions (6px, 47px, 118px, 118px);
@@ -114,12 +117,12 @@ a:link, a:visited, a:active  {
                 opacity: 1;
             }
             .txt {
-                @include display_position (flex, 19px, 173px, 310px, 68px);
-                @include text_desing (center, normal normal normal 55px/68px Ink Free);
+                @include display_position (flex, 19px, null, null);
+                @include text_desing (center, normal normal normal 37px/68px Ink Free);
                 text-decoration: none;
             }
             .txtbis {
-                @include display_position (flex, 75px, 248px, 161px, 24px);
+                @include display_position (flex, null, null, null);
                 @include text_desing (left, normal normal normal 20px/24px Calibri);
             }
             .text-0, .text-1, .text-2, .text-3, .text-4 {
@@ -131,19 +134,19 @@ a:link, a:visited, a:active  {
                 opacity: map-get($map: $textsections, $key: opacity );
             }
             .bi {
-                @include display_position (null, null, null, 40px, 40px);
+                @include display_position (null, null, 40px, 40px);
                 color: #FF5C5D;
                 background: transparent 0% 0% no-repeat padding-box;
                 opacity: 1;
             }
             .bi-instagram {
-                @include display_position (null, 45px, 1685px,null, null);
+                @include display_position (null, 45px,null, null);
             }
             .bi-facebook {
-                @include display_position (null, 45px, 1735px, null, null);
+                @include display_position (null, 45px, null, null);
             }
             .bi-whatsapp {
-                @include display_position (null, 45px, 1785px, null, null);
+                @include display_position (null, 45px, null, null);
             }
         }
     }

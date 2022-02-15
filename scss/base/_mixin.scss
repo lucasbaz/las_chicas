@@ -1,7 +1,6 @@
-@mixin display_position ($display, $valor1, $valor2, $valor3, $valor4) {
+@mixin display_position ($display, $valor1, $valor3, $valor4) {
     display: $display;
-    top: $valor1;
-    left: $valor2;
+    margin-top: $valor1;
     width: $valor3;
     height: $valor4;
 }
@@ -14,6 +13,7 @@
 }
 
 @mixin text_desing ($alineacion, $fuente) {
+    justify-content: center;
     text-decoration: none;
     text-align: $alineacion;
     font: $fuente;

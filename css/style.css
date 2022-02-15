@@ -50,37 +50,31 @@ a:link, a:visited, a:active {
 }
 
 .button-nav0 {
-  display: flex;
-  top: 40px;
-  left: 708px;
+  margin-top: 40px;
   width: 166px;
   height: 50px;
 }
 .button-nav1 {
   display: flex;
-  top: 40px;
-  left: 895px;
+  margin-top: 40px;
   width: 166px;
   height: 50px;
 }
 .button-nav2 {
   display: flex;
-  top: 40px;
-  left: 1082px;
+  margin-top: 40px;
   width: 166px;
   height: 50px;
 }
 .button-nav3 {
   display: flex;
-  top: 40px;
-  left: 1269px;
+  margin-top: 40px;
   width: 166px;
   height: 50px;
 }
 .button-nav4 {
   display: flex;
-  top: 40px;
-  left: 1456px;
+  margin-top: 40px;
   width: 166px;
   height: 50px;
 }
@@ -113,20 +107,21 @@ a:link, a:visited, a:active {
 }
 .menu .nav .position-logo {
   grid-area: 1/1/2/2;
+  display: flex;
+  justify-content: space-around;
 }
 .menu .nav .position-name {
   grid-area: 1/2/2/3;
 }
 .menu .nav .position-class {
   grid-area: 1/3/2/4;
+  display: flex;
+  justify-content: space-around;
 }
 .menu .nav .position-social {
   grid-area: 1/4/2/5;
 }
 .menu .nav .logo {
-  display: flex;
-  /* antes estaba con inline */
-  text-decoration: none;
   list-style: none;
 }
 .menu .nav .logo .logomain {
@@ -140,13 +135,11 @@ a:link, a:visited, a:active {
 }
 .menu .nav .logo .txt {
   display: flex;
-  top: 19px;
-  left: 173px;
-  width: 310px;
-  height: 68px;
+  margin-top: 19px;
+  justify-content: center;
   text-decoration: none;
   text-align: center;
-  font: normal normal normal 55px/68px Ink Free;
+  font: normal normal normal 37px/68px Ink Free;
   letter-spacing: 0px;
   color: #FFFFFF;
   opacity: 1;
@@ -154,10 +147,7 @@ a:link, a:visited, a:active {
 }
 .menu .nav .logo .txtbis {
   display: flex;
-  top: 75px;
-  left: 248px;
-  width: 161px;
-  height: 24px;
+  justify-content: center;
   text-decoration: none;
   text-align: left;
   font: normal normal normal 20px/24px Calibri;
@@ -181,16 +171,13 @@ a:link, a:visited, a:active {
   opacity: 1;
 }
 .menu .nav .logo .bi-instagram {
-  top: 45px;
-  left: 1685px;
+  margin-top: 45px;
 }
 .menu .nav .logo .bi-facebook {
-  top: 45px;
-  left: 1735px;
+  margin-top: 45px;
 }
 .menu .nav .logo .bi-whatsapp {
-  top: 45px;
-  left: 1785px;
+  margin-top: 45px;
 }
 
 ul {
