@@ -3,6 +3,11 @@
 @import "../base/mixin";
 
 
+.a {
+    text-decoration: none
+}
+
+
 .space-line {
     @extend %spaceline_style;
 }

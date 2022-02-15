@@ -45,6 +45,10 @@
   opacity: 1;
 }
 
+.a {
+  text-decoration: none;
+}
+
 .button-nav0 {
   display: flex;
   top: 40px;
