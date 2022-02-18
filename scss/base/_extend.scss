@@ -1,4 +1,6 @@
 %button-nav {
+    justify-content: center;
+    text-align: center;
     background: rgba(255, 0, 0, 0) 0% 0% no-repeat padding-box;
     box-shadow: inset 2px 3px 6px #0000001F, inset -2px -2px 3px #457470c9;
     border-radius: 10px;
@@ -8,20 +10,15 @@
 }
 %button-hv {
     backdrop-filter: sepia(20%);
-    text-shadow: 1px 1px 20px #000;
+    text-shadow: 3px 3px 30px #000;
 }
 %button-active {
-    box-shadow: inset -2px -2px 3px #0000001F, inset 2px 3px 6px #457470c9;
+    box-shadow: -2px -2px 3px #0000001F, 2px 3px 6px #457470c9;
 }
 
 %spaceline_style {
-    position: relative;
-    top: 0px;
-    left: 33px;
-    width: 1856px;
-    height: 1px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: 5px solid #869695;
-    opacity: 1;
+    display: flex;
+    margin: 50px;
+    border: 1px solid #869695;
+    opacity: 0.5;
 }

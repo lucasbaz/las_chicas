@@ -16,6 +16,8 @@
 
 /* FIN estilo de la pagina (color de fondo) */
 .button-nav4, .button-nav3, .button-nav2, .button-nav1, .button-nav0 {
+  justify-content: center;
+  text-align: center;
   background: rgba(255, 0, 0, 0) 0% 0% no-repeat padding-box;
   box-shadow: inset 2px 3px 6px #0000001F, inset -2px -2px 3px #457470c9;
   border-radius: 10px;
@@ -26,23 +28,18 @@
 
 .button-nav4 :hover, .button-nav3 :hover, .button-nav2 :hover, .button-nav1 :hover, .button-nav0 :hover {
   backdrop-filter: sepia(20%);
-  text-shadow: 1px 1px 20px #000;
+  text-shadow: 3px 3px 30px #000;
 }
 
 .button-nav4 :active, .button-nav3 :active, .button-nav2 :active, .button-nav1 :active, .button-nav0 :active {
-  box-shadow: inset -2px -2px 3px #0000001F, inset 2px 3px 6px #457470c9;
+  box-shadow: -2px -2px 3px #0000001F, 2px 3px 6px #457470c9;
 }
 
 .space-line {
-  position: relative;
-  top: 0px;
-  left: 33px;
-  width: 1856px;
-  height: 1px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border: 5px solid #869695;
-  opacity: 1;
+  display: flex;
+  margin: 50px;
+  border: 1px solid #869695;
+  opacity: 0.5;
 }
 
 a:link, a:visited, a:active {
@@ -50,6 +47,7 @@ a:link, a:visited, a:active {
 }
 
 .button-nav0 {
+  display: flex;
   margin-top: 40px;
   width: 166px;
   height: 50px;
@@ -82,6 +80,7 @@ a:link, a:visited, a:active {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 10px;
   height: 130px;
   z-index: 5;
 }
@@ -120,6 +119,8 @@ a:link, a:visited, a:active {
 }
 .menu .nav .position-social {
   grid-area: 1/4/2/5;
+  display: flex;
+  justify-content: space-around;
 }
 .menu .nav .logo {
   list-style: none;
@@ -156,7 +157,7 @@ a:link, a:visited, a:active {
   opacity: 1;
 }
 .menu .nav .logo .text-0, .menu .nav .logo .text-1, .menu .nav .logo .text-2, .menu .nav .logo .text-3, .menu .nav .logo .text-4 {
-  text-align: center;
+  padding: 6px;
   font: normal normal normal 25px/31px Calibri;
   letter-spacing: 0px;
   color: #FFFFFF;

@@ -12,7 +12,7 @@ a:link, a:visited, a:active  {
 }
 
 .button-nav0 {
-    @include display_position (null, 40px, 166px, 50px);
+    @include display_position (flex, 40px, 166px, 50px);
     @extend %button-nav;
         :hover {
             @extend %button-hv;
@@ -66,6 +66,7 @@ a:link, a:visited, a:active  {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 10px;
     height: 130px;
     z-index: 5;
     .nav {
@@ -103,6 +104,8 @@ a:link, a:visited, a:active  {
         }
         .position-social {
             grid-area: 1 / 4 / 2 / 5;
+            display: flex;
+            justify-content: space-around;
         }
 
         .logo {
@@ -126,7 +129,7 @@ a:link, a:visited, a:active  {
                 @include text_desing (left, normal normal normal 20px/24px Calibri);
             }
             .text-0, .text-1, .text-2, .text-3, .text-4 {
-                text-align: map-get($map: $textsections, $key: alineacion);
+                padding: map-get($map: $textsections, $key: pading ) ;
                 font: map-get($map: $textsections, $key: fontstyle );
                 letter-spacing: map-get($map: $textsections, $key: letterspacing );
                 color: map-get($map: $textsections, $key: color);
