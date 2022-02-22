@@ -12,7 +12,7 @@ a:link, a:visited, a:active  {
 }
 
 .button-nav0 {
-    @include display_position (flex, 40px, 166px, 50px);
+    @include display_position (flex, 20px, 20px, null);
     @extend %button-nav;
         :hover {
             @extend %button-hv;
@@ -22,7 +22,7 @@ a:link, a:visited, a:active  {
         }
 }
 .button-nav1 {
-    @include display_position (flex, 40px, 166px, 50px);
+    @include display_position (flex, 20px, 20px, null);
     @extend %button-nav;
         :hover {
             @extend %button-hv;
@@ -32,7 +32,7 @@ a:link, a:visited, a:active  {
         }
 }
 .button-nav2 {
-    @include display_position (flex, 40px, 166px, 50px);
+    @include display_position (flex, 20px, 20px, null);
     @extend %button-nav;
         :hover {
             @extend %button-hv;
@@ -42,7 +42,7 @@ a:link, a:visited, a:active  {
         }
 }
 .button-nav3 {
-    @include display_position (flex, 40px, 166px, 50px);
+    @include display_position (flex, 20px, 20px, null);
     @extend %button-nav;
         :hover {
             @extend %button-hv;
@@ -52,7 +52,7 @@ a:link, a:visited, a:active  {
         }
 }
 .button-nav4 {
-    @include display_position (flex, 40px, 166px, 50px);
+    @include display_position (flex, 20px, 20px, null);
     @extend %button-nav;
         :hover {
             @extend %button-hv;
@@ -63,16 +63,19 @@ a:link, a:visited, a:active  {
 }
 
 .menu {
+    position: fixed;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 10px;
-    height: 130px;
+    height: 75px;
+    width: 100%;
+    right: 0px;
+    left: 0px;
     z-index: 5;
     .nav {
-        position: relative;
-        min-width: 100%;
-        min-height: auto;
+        width: 100%;
+        height: 100%;
         background: #79c4bfc9 0% 0% padding-box;
         border: 1px solid #B9D5D3;
         border-radius: 17px;
@@ -82,10 +85,12 @@ a:link, a:visited, a:active  {
         // grid-template-areas: 'logo nombre class social';
         .list-property {
             display: grid;
-            min-width: 100%;
-            min-height: auto;
-            grid-template-columns: 0.5fr 0.75fr 2fr 0.3fr;
-            grid-template-rows: 120px;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 0px;
+            padding-left: 0px;
+            grid-template-columns: 0.3fr 0.3fr 1fr 0.2fr;
+            grid-template-rows: 100%;
             grid-column-gap: 0px;
             grid-row-gap: 0px;
         }
@@ -93,6 +98,8 @@ a:link, a:visited, a:active  {
             grid-area: 1 / 1 / 2 / 2;
             display: flex;
             justify-content: space-around;
+            height: 100%;
+            padding: 3px;
         }
         .position-name {
             grid-area: 1 / 2 / 2 / 3;
@@ -113,20 +120,27 @@ a:link, a:visited, a:active  {
             // /* antes estaba con inline */
             // text-decoration: none;
             list-style: none;
+            // height: 100%;
+            .a {
+                display: flex;
+                height: 100%;
+            }
             .logomain {
-                @include positions (6px, 47px, 118px, 118px);
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
                 background: transparent url('assets/images/logolaschicas.png') 0% 0% no-repeat padding-box;
                 border-radius: 27px;
                 opacity: 1;
             }
             .txt {
-                @include display_position (flex, 19px, null, null);
-                @include text_desing (center, normal normal normal 37px/68px Ink Free);
+                @include display_position (flex, 20px, 0px, null);
+                @include text_desing (center, normal normal normal 20px/20px Ink Free);
                 text-decoration: none;
             }
             .txtbis {
                 @include display_position (flex, null, null, null);
-                @include text_desing (left, normal normal normal 20px/24px Calibri);
+                @include text_desing (left, normal normal normal 11px/11px Calibri);
             }
             .text-0, .text-1, .text-2, .text-3, .text-4 {
                 padding: map-get($map: $textsections, $key: pading ) ;
@@ -137,19 +151,19 @@ a:link, a:visited, a:active  {
                 opacity: map-get($map: $textsections, $key: opacity );
             }
             .bi {
-                @include display_position (null, null, 40px, 40px);
+                @include display_position (null, null, null, 16px);
                 color: #FF5C5D;
                 background: transparent 0% 0% no-repeat padding-box;
                 opacity: 1;
             }
             .bi-instagram {
-                @include display_position (null, 45px,null, null);
+                @include display_position (null, 180%,null, null);
             }
             .bi-facebook {
-                @include display_position (null, 45px, null, null);
+                @include display_position (null, 180%, null, null);
             }
             .bi-whatsapp {
-                @include display_position (null, 45px, null, null);
+                @include display_position (null, 180%, null, null);
             }
         }
     }

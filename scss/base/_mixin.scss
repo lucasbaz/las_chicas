@@ -1,7 +1,7 @@
 @mixin display_position ($display, $valor1, $valor3, $valor4) {
     display: $display;
     margin-top: $valor1;
-    width: $valor3;
+    margin-bottom: $valor3;
     height: $valor4;
 }
 
