@@ -1,0 +1,109 @@
+@import "../base/mapas";
+@import "../base/extend";
+@import "../base/mixin";
+.bi{
+    @include display_position (null, null, null, 25px);
+                color: #FF5C5D;
+                background: transparent 0% 0% no-repeat padding-box;
+                opacity: 1;
+}
+.footer {
+    @extend %footer_style;
+    .first-ch-footer {
+        display: inline-flex;
+        flex-direction: row;
+        .linea-vertical-footer {
+            display: inline-flex;
+            flex-direction: row;
+            z-index: 1;
+            // position: absolute;
+            margin-top: 50px;
+            margin-bottom: 0;
+            margin-left: 70px;
+            width: 2px;
+            height: 200px;
+            background-color: #707070;
+        }
+        .lista-footer {
+            // position: relative;
+            display: inline-flex;
+            flex-direction: column;
+            margin-top: 77px;
+            margin-bottom: 0px;
+            list-style: none;
+            .text-lista-footer {
+                text-decoration: none;
+                text-align: left;
+                font: normal normal normal 20px/24px Calibri;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+            }
+        }
+    }
+    .second-ch-footer {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .cuadro-footer {
+            // position: absolute;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 230px;
+            height: 100px;
+            border: 5px solid #707070;
+            opacity: 1;
+            .titulo-cuadro-footer {
+                display: block;
+                margin-top: 10px;
+                text-align: center;
+                font: normal normal normal 20px/24px Calibri;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+                .num-cuadro-footer {
+                    text-decoration: none;
+                    font: normal normal normal 35px/50px Calibri;
+                    color: #000000;
+                }
+            }
+        }
+        .logosfooter {
+            display: inline-flex;
+            margin-top: 15px;
+        
+            .bi-logofooterwsp{
+                margin-right: 10px;
+            }
+    
+        }
+    }
+    
+    .third-ch-footer {
+        display: flex;
+        flex-direction: column;
+        .bi-logofooter {
+            display: flex;
+            margin-top: 100px;
+            margin-left: 300px;
+            width: 100px;
+            height: 100px;
+            border-radius: 30px;
+            opacity: 1;
+        }
+        .text-copiright {
+            display: flex;
+            margin-top: 60px;
+            margin-left: 20px;
+            height: 24px;
+            text-align: left;
+            font: normal normal normal 15px/24px Calibri;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+        }
+    }
+   
+}
