@@ -26,16 +26,16 @@
     justify-content: center;
     grid-template-rows: 1fr 0.5fr;
     grid-template-columns: repeat(3, 1fr);
-    border: 3px solid black;
+    // border: 3px solid black;
     grid-template-areas:
     'carousel carousel carousel'
     'foto1 foto2 foto3';
     .fotos-inicio {
-        position: relative;
+        display: flex;
     /* display: inline-block; */
     /* border: 1px solid gray ; */
-        width: 400px;
-        height: 300px;
+        // width: 400px;
+        // height: 300px;
         margin: 30px;
         border-radius: 15px;
     }

@@ -415,15 +415,12 @@ ul {
   justify-content: center;
   grid-template-rows: 1fr 0.5fr;
   grid-template-columns: repeat(3, 1fr);
-  border: 3px solid black;
   grid-template-areas: "carousel carousel carousel" "foto1 foto2 foto3";
 }
 .inicio .fotos-inicio {
-  position: relative;
+  display: flex;
   /* display: inline-block; */
   /* border: 1px solid gray ; */
-  width: 400px;
-  height: 300px;
   margin: 30px;
   border-radius: 15px;
 }
@@ -572,10 +569,8 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "prod1 prod2 prod3" "prod4 prod5 prod6";
-  gap: 100px;
+  gap: 200px;
   justify-items: center;
-  margin-left: 100px;
-  margin-right: 100px;
   margin-top: 50px;
 }
 .item-producto .prod {
@@ -589,8 +584,8 @@ ul {
   justify-content: center;
   /* display: inline-block; */
   /* border: 1px solid gray ; */
-  width: 280px;
-  height: 200px;
+  width: 150%;
+  height: 300%;
 }
 .item-producto .prod1 {
   grid-area: prod1;

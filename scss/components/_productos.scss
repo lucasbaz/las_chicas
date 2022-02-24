@@ -9,10 +9,8 @@
     grid-template-areas: 
     'prod1 prod2 prod3'
     'prod4 prod5 prod6';
-    gap: 100px;
+    gap: 200px;
     justify-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
     margin-top: 50px;
     .prod {
         background-repeat: no-repeat;
@@ -25,8 +23,8 @@
         justify-content: center;
         /* display: inline-block; */
         /* border: 1px solid gray ; */
-        width: 280px;
-        height: 200px;
+        width: 150%;
+        height: 300%;
     }
     .prod1 {
         grid-area: prod1;
