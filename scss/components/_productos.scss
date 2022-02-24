@@ -1,3 +1,75 @@
 @import "../base/mapas";
 @import "../base/extend";
 @import "../base/mixin";
+
+.item-producto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    'prod1 prod2 prod3'
+    'prod4 prod5 prod6';
+    gap: 100px;
+    justify-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    .prod {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment:local;
+        border: 2px solid black;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* display: inline-block; */
+        /* border: 1px solid gray ; */
+        width: 280px;
+        height: 200px;
+    }
+    .prod1 {
+        grid-area: prod1;
+        background-image: url('../assets/images/img10.png');
+    }
+    .prod2 {
+        grid-area: prod2;
+        background-image: url('../assets/images/img12.png');
+    }
+    .prod3 {
+        grid-area: prod3;
+        background-image: url("../assets/images/img14.png");
+    }
+    .prod4 {
+        grid-area: prod4;
+        background-image: url("../assets/images/img11.png");
+    }
+    .prod5 {
+        grid-area: prod5;
+        background-image: url("../assets/images/img7.png");
+    }
+    .prod6 {
+        grid-area: prod6;
+        background-image: url("../assets/images/img16.png");
+    }
+    .titulo-prod {
+        // justify-content: center;
+        // margin-top: 125px;
+        // margin-bottom: 125px;
+        .descripcion-producto{
+            // position: relative;
+            z-index: 2;
+            text-decoration: none;
+            /* top: 173px;
+            left: 173px; 
+            width: 128px;
+            height: 49px; */
+            text-align: center;
+            font: normal normal bold 40px/49px Calibri;
+            -webkit-text-stroke: 1px grey;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+        }
+    }
+}
