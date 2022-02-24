@@ -347,4 +347,97 @@ ul {
   opacity: 1;
 }
 
+.button-nav0, .button-nav1, .button-nav2, .button-nav3, .button-nav4 {
+  justify-content: center;
+  text-align: center;
+  background: rgba(255, 0, 0, 0) 0% 0% no-repeat padding-box;
+  box-shadow: inset 2px 3px 6px #0000001F, inset -2px -2px 3px #457470c9;
+  border-radius: 10px;
+  opacity: 1;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+}
+
+.button-nav0 :hover, .button-nav1 :hover, .button-nav2 :hover, .button-nav3 :hover, .button-nav4 :hover {
+  backdrop-filter: sepia(20%);
+  text-shadow: 3px 3px 30px #000;
+}
+
+.button-nav0 :active, .button-nav1 :active, .button-nav2 :active, .button-nav3 :active, .button-nav4 :active {
+  box-shadow: -2px -2px 3px #0000001F, 2px 3px 6px #457470c9;
+  border-radius: 10px;
+}
+
+.space-line {
+  display: flex;
+  margin: 50px;
+  border: 1px solid #869695;
+  opacity: 0.5;
+}
+
+.footer {
+  background: #D1D1D1 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+  display: grid;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100%);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.slide img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.slide {
+  background-color: transparent linear-gradient(180deg, #B9D5D3 0%, #AFC7C5 28%, #A7BBB9 42%, #9FAEAD 59%, #929B9B 89%, #808080 100%) 0% 0% padding-box;
+  padding-top: 100px;
+  grid-area: carousel;
+}
+
+.slide h5 {
+  background-color: rgba(128, 128, 128, 0.616);
+  margin-bottom: 0px;
+}
+
+.slide p {
+  background-color: rgba(128, 128, 128, 0.616);
+}
+
+.inicio {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 1fr 0.5fr;
+  grid-template-columns: repeat(3, 1fr);
+  border: 3px solid black;
+  grid-template-areas: "carousel carousel carousel" "foto1 foto2 foto3";
+}
+.inicio .fotos-inicio {
+  position: relative;
+  /* display: inline-block; */
+  /* border: 1px solid gray ; */
+  width: 400px;
+  height: 300px;
+  margin: 30px;
+  border-radius: 15px;
+}
+.inicio .foto1 {
+  grid-area: foto1;
+  background-image: url("../assets/images/img9.png");
+}
+.inicio .foto2 {
+  grid-area: foto2;
+  background-image: url("../assets/images/img3.png");
+}
+.inicio .foto3 {
+  grid-area: foto3;
+  background-image: url("../assets/images/img5.png");
+}
+
 /*# sourceMappingURL=style.css.map */

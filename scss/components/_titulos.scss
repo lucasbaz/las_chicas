@@ -1,0 +1,24 @@
+@import "../base/mapas";
+@import "../base/extend";
+@import "../base/mixin";
+
+.Secciones {
+    position: relative;
+    top:0px ;
+    left: 32px;
+    width: 1856px;
+    height: 900px;
+    justify-items: center;
+    /* background: transparent url('/assets/images/Fondo1.jpg') 0% 0% no-repeat padding-box; */
+    /* border: 1px solid black; */
+    /* background-image: url("/assets/images/Fondo1.jpg");background-repeat: no-repeat;background-size: cover */
+    /* background-color: transparent;
+    background-image: url('/assets/images/Fondo1.jpg'); */
+    background-image: url('../assets/images/Fondo1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+    border-radius: 25px;
+    opacity: 1;
+    backdrop-filter: blur(20px);
+}
