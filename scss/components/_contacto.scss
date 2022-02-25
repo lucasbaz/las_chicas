@@ -1,0 +1,38 @@
+
+.contacto-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    'form mapa'
+    'form info';
+    justify-items: center;
+    align-items: center;
+    .seccion-contacto {
+        grid-area: form;
+    }
+    .mapa {
+        grid-area: mapa;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .info {
+        grid-area: info;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    .detalle-contacto {
+            .link {
+                display: flex;
+            }
+            .info-contacto {
+                display: flex;
+                margin-left: 5%;
+                color: rgb(58, 56, 56);
+                font: normal normal bold 25px/30px Calibri;
+            }
+        }
+    }
+}
