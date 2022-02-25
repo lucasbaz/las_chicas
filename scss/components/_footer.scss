@@ -3,13 +3,14 @@
 @import "../base/mixin";
 .bi{
     @include display_position (null, null, null, 25px);
-                color: #FF5C5D;
-                background: transparent 0% 0% no-repeat padding-box;
-                opacity: 1;
+    color: #FF5C5D;
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
 }
 .footer {
     @extend %footer_style;
     .first-ch-footer {
+        grid-area: 1 / 1 / 2 / 2;
         display: inline-flex;
         flex-direction: row;
         .linea-vertical-footer {
@@ -42,6 +43,7 @@
         }
     }
     .second-ch-footer {
+        grid-area: 1 / 2 / 2 / 3;
         display: inline-flex;
         flex-direction: column;
         justify-content: center;
@@ -82,6 +84,7 @@
     }
     
     .third-ch-footer {
+        grid-area: 1 / 3 / 2 / 4;
         display: flex;
         flex-direction: column;
         .bi-logofooter {
@@ -93,17 +96,19 @@
             border-radius: 30px;
             opacity: 1;
         }
-        .text-copiright {
-            display: flex;
-            margin-top: 60px;
-            margin-left: 20px;
-            height: 24px;
-            text-align: left;
-            font: normal normal normal 15px/24px Calibri;
-            letter-spacing: 0px;
-            color: #000000;
-            opacity: 1;
-        }
+        
+    }
+    .text-copiright {
+        grid-area: 2 / 1 / 3 / 4;
+        display: flex;
+        justify-content: end;
+        height: 24px;
+        text-align: left;
+        font: normal normal normal 15px/24px Calibri;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        
     }
    
 }
