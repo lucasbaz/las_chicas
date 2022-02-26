@@ -1,0 +1,26 @@
+.position-tortas {
+    margin-top: 200px;
+}
+.divider {
+    height: 20px;
+}
+.container {
+    background-color: rgba(126, 124, 124, 0.164);
+    border-radius: 1%;
+    
+    .card1 {
+        background-image: url('../assets/images/img9.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card2 {
+        background-image: url('../assets/images/img19.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card3 {
+        background-image: url('../assets/images/img10.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
