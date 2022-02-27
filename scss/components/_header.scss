@@ -169,6 +169,33 @@ a:link, a:visited, a:active  {
         }
     }
 }
+    .nav2 {
+        background: #79c4bfc9 0% 0% padding-box;
+        div {
+            display: flex;
+            .logomain {
+                display: flex;
+                height: 50px;
+                width: 100%;
+                margin-left: 5px;
+                object-fit: contain;
+                background: transparent url('assets/images/logolaschicas.png') 0% 0% no-repeat padding-box;
+                border-radius: 27px;
+                opacity: 1;
+        }
+        
+        }
+        .txt {
+            @include display_position (flex, 20px, 0px, null);
+            @include text_desing (center, normal normal normal 20px/20px Ink Free);
+            margin-left: 10px;
+            text-decoration: none;
+        }
+        .txtbis {
+            @include display_position (flex, null, null, null);
+            @include text_desing (left, normal normal normal 11px/11px Calibri);
+        }
+    }
 
 ul {
     text-decoration: none;

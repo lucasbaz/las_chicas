@@ -201,6 +201,47 @@ a:link, a:visited, a:active {
   margin-top: 180%;
 }
 
+.nav2 {
+  background: #79c4bfc9 0% 0% padding-box;
+}
+.nav2 div {
+  display: flex;
+}
+.nav2 div .logomain {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  margin-left: 5px;
+  object-fit: contain;
+  background: transparent url("assets/images/logolaschicas.png") 0% 0% no-repeat padding-box;
+  border-radius: 27px;
+  opacity: 1;
+}
+.nav2 .txt {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  font: normal normal normal 20px/20px Ink Free;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.nav2 .txtbis {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  text-align: left;
+  font: normal normal normal 11px/11px Calibri;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
 ul {
   text-decoration: none;
 }
@@ -770,6 +811,12 @@ ul {
   object-fit: cover;
   width: 200px;
   height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .pantalla-mediana {
+    display: none !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

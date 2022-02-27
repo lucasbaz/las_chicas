@@ -27,8 +27,8 @@
     <title>Las Chicas Cakes | Home </title>
 </head>
 <body class="pagina">
-    <header class=" menu d-none d-md-block ">
-        <nav class="nav">
+    <header class="menu">
+        <nav class="nav pantalla-mediana">
             <ul class="list-property">
                 <div class="position-logo"><li class="logo"><a href="index.html"><img class="logomain" src="assets/images/logolaschicas.png" alt="Hola que lindo verte somos las chicas cackes"></a></li></div>
                 <div class="position-name">
@@ -46,7 +46,7 @@
                     <li class="logo button-nav0"><a class="text-0" href="../Las_chicas_cakes/pages/nosotras.html">Nosotras</a></li>
                     <li class="logo button-nav1"><a class="text-1" href="#Productos">Productos</a></li>
                     <li class="logo button-nav2"><a class="text-2" href="#Eventos">Eventos</a></li>
-                    <li class="logo button-nav3"><a class="text-3" href="../Las_chicas_cakes/pages/blog.html">Blog</a></li>
+                    <li class="logo button-nav3"><a class="text-3" href="../pages/blog.html">Blog</a></li>
                     <li class="logo button-nav4"><a class="text-4" href="#Contacto">Contacto</a></li>
                 </div>
                 <div class="position-social">
@@ -61,6 +61,50 @@
                       </svg></a></li>
                 </div>
             </ul>
+        </nav>
+        <nav class="nav2 navbar d-md-none navbar-light bg-gradient bg-opacity-50 fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                    <div class="">
+                        <img src="assets/images/logolaschicas.png" class="logomain" alt="Las chicas cakes">
+                        <h2 class="txt">Las Chicas</h2>
+                    </div> 
+                    
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Las chicas</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#Inicio">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Productos">Productos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mas..
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="#Contacto">Contacto</a></li>
+                        <li><a class="dropdown-item" href="#Eventos">Eventos</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="pages/blog.html">Blog</a></li>
+                        <li><a class="dropdown-item" href="pages/nosotras.html">Nosotras</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
         </nav>
     </header>
     <!-- El index esta diseñado en landing page, donde tengo 4 secciones
@@ -246,7 +290,7 @@
         <div class="space-line"></div>
     </main>
     
-    <footer class="footer">
+    <footer class="footer pantalla-mediana">
         <div class="first-ch-footer">
             <div class="linea-vertical-footer"></div>
             <ul class="lista-footer">
@@ -254,7 +298,7 @@
                 <li><a href="../Las_chicas_cakes/pages/nosotras.html" class="text-lista-footer">NOSOTRAS</a></li>
                 <li><a href="#Productos" class="text-lista-footer">PRODUCTOS</a></li>
                 <li><a href="#Eventos" class="text-lista-footer">EVENTOS</a></li>
-                <li><a href="../Las_chicas_cakes/pages/blog.html" class="text-lista-footer">BLOG</a></li>
+                <li><a href="../pages/blog.html" class="text-lista-footer">BLOG</a></li>
                 <li><a href="#Contacto" class="text-lista-footer">CONTACTO</a></li>
             </ul>
         </div>

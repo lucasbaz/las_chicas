@@ -8,3 +8,9 @@
 @import "../scss/components/contacto";
 @import "../scss/components/pag-productos";
 @import "../scss/components/blog";
+
+@media screen and (max-width: 768px) {
+    .pantalla-mediana {
+        display: none!important;
+    }
+}
