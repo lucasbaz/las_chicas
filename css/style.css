@@ -817,6 +817,21 @@ ul {
   height: 200px;
 }
 
+.bg-nosotras {
+  background-image: url("../assets/images/img1.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.imagen {
+  width: 300px;
+}
+
+.div-img {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 760px) {
   .pantalla-mediana {
     position: absolute;
@@ -997,6 +1012,11 @@ ul {
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+  }
+}
+@media screen and (min-width: 761px) {
+  .footer-xs {
+    display: none !important;
   }
 }
 
