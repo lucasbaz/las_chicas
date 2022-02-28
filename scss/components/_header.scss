@@ -182,8 +182,10 @@ a:link, a:visited, a:active  {
                 background: transparent url('assets/images/logolaschicas.png') 0% 0% no-repeat padding-box;
                 border-radius: 27px;
                 opacity: 1;
-        }
-        
+            }
+            .offcanvas {
+                background: #79c4bfea 0% 0% padding-box;
+            }
         }
         .txt {
             @include display_position (flex, 20px, 0px, null);
